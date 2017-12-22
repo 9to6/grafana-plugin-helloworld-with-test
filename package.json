@@ -1,0 +1,53 @@
+{
+  "name": "helloworld-with-test-panel",
+  "version": "0.1.0",
+  "description": "helloworld with test panel plugin for Grafana",
+  "main": "src/module.js",
+  "scripts": {
+    "clean": "rm -r dist/*",
+    "build": "grunt",
+    "build:watch": "onchange './src/**/*.js' './src/**/*.css' './src/**/*.html' './src/plugin.json' -- npm run build",
+    "test:watch": "karma start",
+    "test": "karma start --single-run"
+  },
+  "keywords": [
+    "helloworld",
+    "grafana",
+    "plugin",
+    "panel"
+  ],
+  "author": "9to6",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "~6.23.0",
+    "babel-eslint": "^8.0.2",
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "grunt": "^0.4.5",
+    "grunt-babel": "^7.0.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-execute": "^0.2.2",
+    "grunt-systemjs-builder": "^0.2.5",
+    "karma": "^1.7.1",
+    "karma-babel-preprocessor": "^7.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-expect": "^1.1.3",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-systemjs": "^0.16.0",
+    "load-grunt-tasks": "~3.5.2",
+    "mocha": "^4.0.1",
+    "moxios": "^0.4.0",
+    "onchange": "^3.3.0",
+    "systemjs": "^0.19.47"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-preset-env": "^1.6.1",
+    "es6-module-loader": "^0.17.11"
+  }
+}
